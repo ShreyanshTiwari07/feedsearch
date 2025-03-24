@@ -1,17 +1,16 @@
 async function fetchPosts() {
     const query = document.getElementById('searchQuery').value;
-    const response = await fetch(`http://95.217.101.148:5000/socialsearch?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://search.nfthing.com:443/socialsearch?query=${encodeURIComponent(query)}`);
     const data = await response.json();
     displayPosts(data.posts);
 }
 
 async function fetchMusic() {
     const query = document.getElementById('musicQuery').value;
-    const response = await fetch(`http://95.217.101.148:5000/audiosearch?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://search.nfthing.com:443/audiosearch?query=${encodeURIComponent(query)}`);
     const data = await response.json();
     displayPosts(data.posts);
 }
-
 function displayPosts(posts) {
     const container = document.getElementById('postsContainer');
     container.innerHTML = ''; // Clear previous results
