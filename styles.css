@@ -31,6 +31,10 @@ body {
     height: auto;
 }
 
+.post audio {
+    margin-top: 10px;
+}
+
 .post-detail {
     margin-top: 5px;
 }
