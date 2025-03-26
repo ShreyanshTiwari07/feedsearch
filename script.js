@@ -30,7 +30,7 @@ function displayPosts(posts) {
             <div class="post-detail"><strong>Thumbnail URL:</strong> ${post.thumbnail_url ? `<img src="${post.thumbnail_url}" alt="Thumbnail" style="width:100px;">` : 'N/A'}</div>
             <div class="post-detail"><strong>Time:</strong> ${new Date(parseInt(post.time)).toLocaleString()}</div>
             <div class="post-detail"><strong>Canonical URL:</strong> ${post.canonical_url ? `<a href="${post.canonical_url}">Link</a>` : 'N/A'}</div>
-            <div class="post-detail"><strong>Similarity Score:</strong> ${post.similarity_score.toFixed(3)}</div>
+            <div class="post-detail"><strong>Similarity Score:</strong> ${post.similarity_score}</div>
             ${post.audio_url ? `<div class="post-detail"><strong>Audio:</strong> <audio controls><source src="${post.audio_url}" type="audio/mpeg">Your browser does not support the audio element.</audio></div>` : ''}
         `;
         container.appendChild(postElement);
