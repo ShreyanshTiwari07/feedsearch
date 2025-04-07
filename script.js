@@ -7,7 +7,7 @@ async function fetchPosts() {
 
 async function fetchMusic() {
     const query = document.getElementById('musicQuery').value;
-    const response = await fetch(`https://search.nfthing.com:443/audiosearchtest?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://search.nfthing.com:443/audiosearch?query=${encodeURIComponent(query)}`);
     const data = await response.json();
     displayPosts(data.posts);
 }
