@@ -1,13 +1,13 @@
 async function fetchPosts() {
     const query = document.getElementById('searchQuery').value;
-    const response = await fetch(`https://search.nfthing.com:440/socialsearchtest?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://search.nfthing.com:443/socialsearchtest?query=${encodeURIComponent(query)}`);
     const data = await response.json();
     displayPosts(data.posts);
 }
 
 async function fetchMusic() {
     const query = document.getElementById('musicQuery').value;
-    const response = await fetch(`https://search.nfthing.com:440/audiosearchtest?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://search.nfthing.com:443/audiosearchtest?query=${encodeURIComponent(query)}`);
     const data = await response.json();
     displayPosts(data.posts);
 }
