@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     color: #333;
@@ -37,4 +37,56 @@ body {
 
 .post-detail {
     margin-top: 5px;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.posts-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    border: 1px solid #ddd;
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.keyword-post {
+    border-left: 4px solid #4CAF50;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post audio {
+    margin-top: 10px;
+}
+
+.post-detail {
+    margin-top: 5px;
+}
+
+.keywords-header {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
